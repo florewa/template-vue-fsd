@@ -1,13 +1,13 @@
-import '@/app/assets/styles/main.scss';
+import '@/shared/assets/styles/main.scss';
 
 import { VueQueryPlugin } from '@tanstack/vue-query';
 import { createPinia } from 'pinia';
 import { createApp } from 'vue';
 
-import { queryClient } from '@/shared/api';
-
 import App from './App.vue';
 import { router } from './providers';
+
+import { queryClient } from '@/shared/api';
 
 const app = createApp(App);
 
